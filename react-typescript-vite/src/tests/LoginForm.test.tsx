@@ -1,5 +1,5 @@
 /// <reference types="@wdio/globals/types" />
-import React from 'react'
+import 'react'
 import { $, expect } from '@wdio/globals'
 import { fn } from '@wdio/browser-runner'
 import { Key } from 'webdriverio'
