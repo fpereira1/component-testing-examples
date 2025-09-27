@@ -1,3 +1,4 @@
+/// <reference types="@wdio/globals/types" />
 import 'react'
 import { $, expect } from '@wdio/globals'
 import { render } from '@testing-library/react'
@@ -8,7 +9,7 @@ describe('React Component Testing', () => {
     // The render method returns a collection of utilities to query your component.
     render(<App />)
 
-    const button = $('button*=count is')
+    const button = await $('button*=count is')
 
     // Dispatch a native click event to our button element.
     await button.click()
